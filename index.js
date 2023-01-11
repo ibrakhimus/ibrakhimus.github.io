@@ -1,6 +1,17 @@
-// template_puut7uj
-// service_6hw7566
-// ETDn6akjv6lHFgQj0 
+
+
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+    document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
 
 function contact(event) {
     event.preventDefault();
@@ -21,8 +32,6 @@ function contact(event) {
             alert("The email service is temporarily unavailable. Please contact me directly on ibrakhimus@gmail.com")
         })
     }
-
-let isModalOpen = false;
 
 function toggleModal() {
     if (isModalOpen) {
