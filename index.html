@@ -8,6 +8,7 @@
   <title>Ibrakhim Ustelbay</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://kit.fontawesome.com/0b77e17707.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>
   <script type="text/javascript">
@@ -116,7 +117,7 @@
       <div class="modal__half modal__contact">
         <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
         <h3 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h3>
-        <form id="contact__form" onsubmit="contact()">
+        <form id="contact__form" onsubmit="contact(event)">
           <div class="form__item">
             <label class="form__item--label">Name</label>
             <input class="input" name="user_name" type="text" required></input>
