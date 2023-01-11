@@ -4,20 +4,24 @@
 
 function contact(event) {
     event.preventDefault();
-    // emailjs
-    //     .sendForm(
-    //         "service_6hw7566",
-    //         "template_puut7uj",
-    //         event.target,
-    //         "ETDn6akjv6lHFgQj0"
-    //     ).then(() => {
-    //         alert("Thank you for your message!");
-    //     })
     const loading = document.querySelector(".modal__overlay--loading");
     const success = document.querySelector(".modal__overlay--success");
-    loading.classList += " modal__overlay--visible"
-    setTimeout(() => {
-        loading.classList.remove("modal__overlay--visible");
-        console.log("Thank you for your message!");
-    }, 1000);
+    loading.classList += " modal__overlay--visible";
+    emailjs
+        .sendForm(
+            "service_6hw7566",
+            "template_puut7uj",
+            event.target,
+            "ETDn6akjv6lHFgQj0"
+        ).then(() => {
+            loading.classList.remove("modal__overlay--visible");
+            success.classList += " modal__overlay--visible";
+        }).catch(() => {
+            loading.classList.remove("modal__overlay--visible");
+            alert("The email service is temporarily unavailable. Please contact me directly on ibrakhimus@gmail.com")
+        })
     }
+
+function toggleModal() {
+    // toggle modal
+}
