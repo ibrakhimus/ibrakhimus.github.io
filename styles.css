@@ -584,6 +584,7 @@ FOOTER
 footer {
    background-color: #242424;
    display: flex;
+   position: relative;
 }
 
 .footer__row {
@@ -665,4 +666,15 @@ footer {
 .shape--8 {
    top: 80vh;
    left: 80vw;
+}
+
+/* Small Phones, Tablets, Large Smartphones */
+@media(max-width: 768px) {
+   .title {
+      font-size: 80px
+   }
+
+   .header__para {
+      font-size: 20px;
+   }
 }
