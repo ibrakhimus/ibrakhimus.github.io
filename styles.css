@@ -102,7 +102,7 @@ textarea:focus {
 }
 
 .blue {
-   color: #5bb2ec;
+   color: #5bb2ec !important;
 }
 
 .link__hover--effect {
@@ -512,6 +512,10 @@ PROJECTS
    text-align: center;
    font-size: 48px;
    margin-bottom: 60px;
+}
+
+.project {
+   margin-bottom: 135px;
 }
 
 .project__img {
