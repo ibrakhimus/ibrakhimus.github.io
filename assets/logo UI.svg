@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+	<title>template</title>
+	<style>
+		.s0 { fill: #000000 } 
+	</style>
+	<path id="IU" class="s0" aria-label="IU"  d="m179.3 108.2h-47.4v18.5h12.1v66h-12.1v18.4h47.4v-18.4h-12v-66h12zm20.5 0v70.2c0 20.7 15.3 34.2 38.7 34.2h4.2c23.4 0 38.9-13.5 38.9-34.2v-70.2h-23.1v69.7c0 9.6-7.1 16.4-17.7 16.4-10.5 0-17.9-6.9-17.9-16.4v-69.7z"/>
+</svg>
